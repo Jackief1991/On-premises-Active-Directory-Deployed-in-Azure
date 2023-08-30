@@ -42,18 +42,17 @@ Create your first VM. Name it DC-1 for Domain Controler and use windows server 2
 <p>
 <img src="https://i.imgur.com/R32Xku7.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<p>
+
 Installing Active Directory on DC-1.
  - Open DC-1 VM remote Desktop. Open Service Manager -> go to add roles and features -> Click next -> Click next -> next -> click Active Directory Domain Services-> click next all the way to install then click install.
- - in the service manager, Click the yellow flag at the top of the page so you can set as domain controler and finish installing acitive directory. 
- - name the domain server mydomain.com -> set password and remember it->click next all the way through.
- -computer will shut down and you will have to reconnect to the DC-1 VM. log in with the domain controler name. mydomain.com/"username" if you cant log in the normal way
+ - In the service manager, Click the yellow flag at the top of the page so you can set as domain controler and finish installing acitive directory. 
+ - Name the domain server mydomain.com -> set password and remember it->click next all the way through.
+ -Computer will shut down and you will have to reconnect to the DC-1 VM. Log in with the domain controler name. mydomain.com/"username" if you cant log in the normal way
  - Click start search active directory. Right click mydomain.com -> new-> organizational unit call it _EMPLOYEES press ok. Do samething making a folder for _ADMIN. Refresh the directory.
-- go to _ADMIN. create new user title it an admin account make a password uncheck the change password setting. click ok.
-- right click the user account ust made and add  domain click check names and click domain admins group and apply and ok it.
- - log out of DC_1 and log back in under the admin account that you just made.
+- Go to _ADMIN. Create new user title it an admin account make a password uncheck the change password setting. click ok.
+- Right click the user account just made -> add  domain -> check names -> domain admins group -> apply -> ok
+- Log out of DC_1 and log back in under the admin account that you just made.
   
-</p>
 <br />
 
 <p>
